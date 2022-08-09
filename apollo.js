@@ -12,6 +12,7 @@ const database = new pg.Client({
 });
 database.connect();
 
+
 const testdatabase = new pg.Client({
 	connectionString: process.env.TESTDATABASE,
 	ssl: true
